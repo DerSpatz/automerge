@@ -7,10 +7,12 @@
 \"automerge\" needs to be installed into your local binary path (usually /usr/local/bin/), then it must be renamed and given execution permissions  It can then be called from the directory you want to merge.
 
 For a simple installation, go to your binary directory (depends on your Linux distribution) and paste this command:
+
 '''
 sudo wget https://raw.githubusercontent.com/DerSpatz/automerge/main/automerge.sh -O automerge
 sudo chmod +x automerge
 '''
+
 # How it works
 \"automerge\" will take the input path, check if any similar paths exist on any other drive
 except the system drive, and add all existing branches into a list. It will then check
@@ -38,21 +40,9 @@ automerge accepts the following parameters:
 |-----------|--------|
 |  -d\|--dry-run | make a dry run without writing any real changes |
 | -p\|--custom-path [path]  | automerge will not run in the current path, but in the specified custom path |
-|                              |                                                      |"
-| -a\|--add-source  [path]    |   adds an additional path to the branches            |"
-|                              |                                                      |"
-| -c\|--create-branches       |   automerge creates additional optional branches     |"
-|                              |   if an additonal source path is specified           |"
-|                              |                                                      |"
-| -r\|--recursion-depth [#]   |   takes a number as recursion depth level            |"
-|                              |   automerge will run through all directories of      |"
-|                              |   the specifed level. Standard is 0, so the          |"
-|                              |   current directory will be automerged               |"
-|                              |                                                      |"
-| -m\|--most-free-space       |   automatically select the branch with the most      |"
-|                              |   free space on its drive                            |"
-|                              |                                                      |"
-| -l\|--largest-branch        |   automatically select the largest existing branch   |"
-|                              |   -m and -l can not be used at the same time         |"
-|                              |                                                      |"
-| -h\|--help                  |   shows this help text 
+| -a\|--add-source  [path]  | adds an additional path to the branches  |
+| -c\|--create-branches | automerge creates additional optional branches if an additonal source path is specified |
+| -r\|--recursion-depth [#] | takes a number as recursion depth level automerge will run through all directories of the specifed level. Standard is 0, so the current directory will be automerged |
+| -m\|--most-free-space | automatically select the branch with the most free space on its drive |
+| -l\|--largest-branch | automatically select the largest existing branch; -m and -l can not be used at the same time |
+| -h\|--help | shows a help text |
