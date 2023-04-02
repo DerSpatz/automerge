@@ -37,12 +37,12 @@ source that does not have a corresponding target branch on the additional source
 automerge accepts the following parameters:
 
 | Parameter | Effect |
-|----------------------|--------|
-|  -d\|--dry-run | make a dry run without writing any real changes |
-| -p\|--custom-path [path]  | automerge will not run in the current path, but in the specified custom path |
-| -a\|--add-source  [path]  | adds an additional path to the branches  |
-| -c\|--create-branches | automerge creates additional optional branches if an additonal source path is specified |
-| -r\|--recursion-depth [#] | takes a number as recursion depth level automerge will run through all directories of the specifed level. Standard is 0, so the current directory will be automerged |
-| -m\|--most-free-space | automatically select the branch with the most free space on its drive |
-| -l\|--largest-branch | automatically select the largest existing branch; -m and -l can not be used at the same time |
-| -h\|--help | shows a help text |
+|:----------------------|--------:|
+| '-d\|--dry-run' | make a dry run without writing any real changes |
+| '-p\|--custom-path [path]'  | automerge will not run in the current path, but in the specified custom path |
+| '-a\|--add-source  [path]'  | adds an additional path to the branches  |
+| '-c\|--create-branches' | automerge creates additional optional branches if an additonal source path is specified |
+| '-r\|--recursion-depth [#]' | takes a number as recursion depth level automerge will run through all directories of the specifed level. Standard is 0, so the current directory will be automerged |
+| '-m\|--most-free-space' | automatically select the branch with the most free space on its drive |
+| '-l\|--largest-branch' | automatically select the largest existing branch; -m and -l can not be used at the same time |
+| '-h\|--help' | shows a help text |
