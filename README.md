@@ -37,7 +37,7 @@ source that does not have a corresponding target branch on the additional source
 automerge accepts the following parameters:
 
 | Parameter | Effect |
-|-----------|--------|
+|----------------------|--------|
 |  -d\|--dry-run | make a dry run without writing any real changes |
 | -p\|--custom-path [path]  | automerge will not run in the current path, but in the specified custom path |
 | -a\|--add-source  [path]  | adds an additional path to the branches  |
